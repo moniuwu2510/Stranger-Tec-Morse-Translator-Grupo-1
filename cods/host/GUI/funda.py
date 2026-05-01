@@ -30,7 +30,7 @@ window.resizable(True, True)
 # Cargar imagen de fondo
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-bg_image = Image.open(os.path.join(BASE_DIR, "cods/host/Fondo/fondo.png"))
+bg_image = Image.open("cods/host/Fondo/fondo.png")
 bg_image = bg_image.resize((ancho, alto))
 bg_photo = ImageTk.PhotoImage(bg_image)
 
